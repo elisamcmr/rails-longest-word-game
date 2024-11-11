@@ -1,0 +1,26 @@
+
+<div class="container">
+<h1 class="my-3">The Longest Word</h1>
+
+<ul class="list-group list-group-horizontal mb-3">
+  <% @letters.gsub(" ","").chars do |letter| %>
+     <li class="list-group-item mx-2 bg-primary text-white"><%= letter %></li>
+  <% end %>
+  </ul>
+
+
+<p class="my-3"><strong>Your Submission:</strong> <%= @word %> </p>
+
+<div>
+  <%= raw @message%>
+</div>
+
+<div>
+  <p><strong>Final Score:</strong> <%= @score %></p>
+</div>
+
+<div class="mt-3">
+  <%= link_to "Play again", new_path, class: "btn btn-link text-decoration-none" %>
+</div>
+
+</div>
