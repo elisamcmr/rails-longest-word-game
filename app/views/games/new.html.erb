@@ -6,8 +6,9 @@
     <% end %>
   </ul>
 
-  <label class="form-label">Enter your word:</label>
-  <div>
+
+  <div class="d-flex flex-column align-items-center">
+  <label class="form-label text-center">Enter your word:</label>
     <form action="/score" method="post" class="input-group mb-3" style="max-width: 600px;" data-turbo="false">
       <input type="text" class="form-control" name="word" placeholder="" aria-label="Input field">
       <button type="submit" class="btn btn-primary">Play</button>
